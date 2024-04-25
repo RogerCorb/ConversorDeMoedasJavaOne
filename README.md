@@ -1,5 +1,5 @@
 
-<img src="/imagemCabecalho.PNG"  width=100% height=25% alt="Banner Exchange Rate Api" title="Banner Exchange Rate Api" >
+<img src="/imagemCabecalho.PNG"  width=100% height=15% alt="Banner Exchange Rate Api" title="Banner Exchange Rate Api" >
 
 
 
