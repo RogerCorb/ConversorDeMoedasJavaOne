@@ -9,7 +9,7 @@ Este programa foi construído para consumir a API de moedas estrangeiras  Exchan
 Nele estamos realizando conexão usando  httpclient, httpresponse, classe record, e assim 
 conseguimos retornar a conversão de alguns pares de moedas como BRL/USD(Real para Dollar),
 USD/BRL(Dollar para Real), USD/ARS(Dollar para Peso argentio),ARS/USD(Peso argentino para Dollar)
-COP/USD(Peso colombiano para Dollar) e  USD/COP(Dollar para Peso Colombiano. Utilizamos também
+COP/USD(Peso colombiano para Dollar) e  USD/COP(Dollar para Peso Colombiano). Utilizamos também
 a biblioteca Gson do google para auxiliar no recebimento e tratamento das requisições http.
 
 
