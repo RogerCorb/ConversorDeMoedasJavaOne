@@ -3,7 +3,7 @@
 
 
 
-# Api para consumo de conversão de moedas do programa Dev Back-end Java ONE(Oracle Next Education)
+# Api para para conversão de moedas Challenge do programa Dev Back-end Java ONE(Oracle Next Education)
 
 Este programa foi construído para consumir a API de moedas estrangeiras  Exchange Rate API 
 Nele estamos realizando conexão usando  httpclient, httpresponse, classe record, e assim 
