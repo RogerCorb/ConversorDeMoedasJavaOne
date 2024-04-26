@@ -8,43 +8,17 @@ public class Principal {
         Conectconvert conectconvert = new Conectconvert();
 
         try {
-            int opcao = 0;
-            while (opcao != 7) {
-                opcao = conversor.menu(leitura,opcao);
+            int opcao;
+            do {
 
-                if (opcao == 1) {
-                    String par = "pair/USD/ARS";
-                    System.out.println("Opção Escolhida.: USD para ARS ");
-                    conversor.resultConverted(par,conectconvert);
-
-                } else if (opcao == 2) {
-                    String par = "pair/ARS/USD";
-                    System.out.println("Opção Escolhida.: ARS para USD ");
-                    conversor.resultConverted(par,conectconvert);
-
-                } else if (opcao == 3) {
-                    String par = "pair/USD/BRL";
-                    System.out.println("Opção Escolhida.: USD para BRL");
-                    conversor.resultConverted(par,conectconvert);
-
-                } else if (opcao == 4) {
-                    String par = "pair/BRL/USD";
-                    System.out.println("Opção Escolhida.: BRL para USD");
-                    conversor.resultConverted(par,conectconvert);
-
-                } else if (opcao == 5) {
-                    String par = "pair/USD/COP";
-                    System.out.println("Opção Escolhida.: USD para COP");
-                    conversor.resultConverted(par,conectconvert);
-                } else if (opcao == 6) {
-                    String par = "pair/COP/USD";
-                    System.out.println("Opção Escolhida.: COP para USD");
-                    conversor.resultConverted(par,conectconvert);
-                } else if (opcao != 7) {
-                    opcao = 0;
+                opcao = conversor.menu(leitura);
+                if (opcao > 0 && opcao < 7) {
+                    conversor.message();
+                    conversor.resultConverted(conectconvert);
+                    opcao= conversor.getOut(leitura);
                 }
-            }
 
+            } while (opcao != 7);
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
         }
