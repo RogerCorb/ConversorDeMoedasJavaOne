@@ -5,16 +5,17 @@ public class Principal {
 
         Scanner leitura = new Scanner(System.in);
         Conversor conversor = new Conversor();
+        Menu menu = new Menu();
         Conectconvert conectconvert = new Conectconvert();
 
         try {
             int opcao;
             do {
-
-                opcao = conversor.menu(leitura);
+                menu.menuOption(leitura);
+                opcao = menu.getOpcao();
                 if (opcao > 0 && opcao < 7) {
-                    conversor.message();
-                    conversor.resultConverted(conectconvert);
+                    conversor.message(menu.getDescricaoParEscolhido());
+                    conversor.resultConverted(conectconvert,menu);
                     opcao= conversor.getOut(leitura);
                 }
 

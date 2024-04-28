@@ -9,7 +9,7 @@ public class Conectconvert {
 
     public TrataResposta conectStringtoJson(String  par, String amount)  {
 
-        URI endereco = URI.create("https://v6.exchangerate-api.com/v6/e450cef1f63592cc4bbf2d3a/"+par+"/"+amount);
+        URI endereco = URI.create("https://v6.exchangerate-api.com/v6/e450cef1f63592cc4bbf2d3a/pair/"+par+"/"+amount);
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(endereco)
