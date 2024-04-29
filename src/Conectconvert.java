@@ -6,10 +6,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class Conectconvert {
+    private final String ENDERECO = "https://v6.exchangerate-api.com/v6/";
+    private final String API_KEY = "e450cef1f63592cc4bbf2d3a";
 
     public TrataResposta conectStringtoJson(String  par, String amount)  {
 
-        URI endereco = URI.create("https://v6.exchangerate-api.com/v6/e450cef1f63592cc4bbf2d3a/pair/"+par+"/"+amount);
+        URI endereco = URI.create(ENDERECO+API_KEY+"/pair/"+par+"/"+amount);
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(endereco)
